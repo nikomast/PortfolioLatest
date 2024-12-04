@@ -1,0 +1,129 @@
+
+.project {
+  border: 2px solid #facf5a;
+  padding: 20px;
+  margin-bottom: 10px;
+  min-height: 50vh;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.project h2 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.project p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.project a {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-image {
+  width: 50%;
+  height: auto;
+}
+
+.project-description {
+  width: 45%;
+}
+
+
+[data-aos="custom-slide-in-left"] {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-out;
+  }
+  
+  [data-aos="custom-slide-in-left"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  [data-aos="custom-slide-in-right"] {
+    transform: translateX(50%);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-out;
+  }
+  
+  [data-aos="custom-slide-in-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .center-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .Navigate {
+  padding: 6px 4px;
+  border: none;
+  }
+  
+  button:hover {
+    background-color: #2f3d4f;
+  }
+  
+  .frame {
+    background-color: #45a29e;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .frame img {
+    max-width: 100%; 
+    max-height: 100vh; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  body, html {
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+  ul{
+    color: white;
+  }
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+  
+@media (max-width: 768px) {
+  .project-content {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center;   /* Center align content */
+  }
+
+  .project-image, .project-description {
+      width: 90%; /* Adjust width for smaller screens */
+      margin-bottom: 20px; /* Add spacing between elements */
+  }
+}

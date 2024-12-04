@@ -4,7 +4,7 @@ import ContactForm from '../forms/ContactForm'; // Import the ContactForm compon
 const ContactPage = () => {
     return (
         <div>
-            <ContactForm /> {/* Include the ContactForm */}
+            <ContactForm />
         </div>
     );
 };

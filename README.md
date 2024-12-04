@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+Portfolio Frontend
+This is a frontend portfolio project built with React, showcasing projects, a contact form, and a diploma thesis about the Traveling Salesman Problem. The project is component-based and uses modern web development practices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Project Showcase: A page displaying individual projects, each with its own dedicated component.
+Contact Form: A functional form allowing users to send inquiries.
+Diploma Thesis Viewer: A page displaying a PDF of the diploma thesis in an embedded viewer.
+Responsive Design: Optimized for both large and small screens.
+Component-Based Architecture: Each section and project is encapsulated in its own React component.
 
-## Available Scripts
+Installation and Setup
+To run this project locally:
 
-In the project directory, you can run:
+Clone the repository:
+git clone https://github.com/your-repo-url.git
+Navigate to the project directory:
+cd portfolio-frontend
+Install dependencies:
+npm install
+Start the development server:
+npm start
+The app will be available at http://localhost:3000.
 
-### `npm start`
+Deployment
+This project includes a Dockerfile for containerized deployment. Here's how to build and run it with Docker:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Build the Docker image:
+docker build -t portfolio-frontend .
+Run the container:
+docker run -p 8080:80 portfolio-frontend
+The application will be accessible at http://localhost:8080.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+File Structure
+src/components: Contains reusable React components for the project pages.
+src/pages: Contains the main pages like the project showcase, contact form, and diploma thesis viewer.
+public/paper.pdf: The PDF file of the diploma thesis.
+Dockerfile: Configuration for containerized deployment.
+.gitignore: Specifies files and folders to ignore in version control.
+Libraries Used
+The project uses the following libraries (all dependencies are listed in package.json):
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: Core framework for building user interfaces.
+@react-pdf-viewer: For displaying the PDF of the diploma thesis.
+AOS (Animate on Scroll): For smooth animations during scrolling.
+Development Practices
+Component Modularity: Each section of the project is built as a reusable component.
+Responsive Design: CSS media queries ensure optimal usability on all screen sizes.
+Git Best Practices: A .gitignore file prevents sensitive files and unnecessary build artifacts from being committed.
+Known Issues
+PDF Download Prevention: The embedded PDF viewer does not allow downloads to ensure that the document is read-only.
+Node Version Warning: You might encounter warnings during npm install due to deprecated packages in the current Node.js environment.

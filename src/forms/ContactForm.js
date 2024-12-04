@@ -8,7 +8,6 @@ const ContactForm = () => {
         name: '',
         email: '',
         message: '',
-        // Add other fields if necessary
     });
 
     const [captchaValue, setCaptchaValue] = useState(null);
@@ -33,21 +32,17 @@ const ContactForm = () => {
             return;
         }
 
-        // Include the captchaValue in your submission data
         const submissionData = {
             ...formData,
             captcha: captchaValue,
         };
 
-        // Send a POST request to your Django back-end
         axios.post('https://portfolio-backend-b7enjhlbya-lz.a.run.app/api/contact/', submissionData)
             .then(response => {
-                // Handle success
                 console.log("Okay");
                 setSubmissionStatus('success');
             })
             .catch(error => {
-                // Handle errors
                 console.error(error);
                 setSubmissionStatus('error'); 
             });
