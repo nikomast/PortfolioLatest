@@ -1,7 +1,8 @@
 
 .project {
   border: 2px solid #facf5a;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 10px;
   margin-bottom: 10px;
   min-height: 50vh;
 }
@@ -10,34 +11,38 @@
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  flex-wrap: wrap; /* Allow wrapping */
+  flex-wrap: wrap; 
 }
 
 .project h2 {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Monaco', Courier, monospace;
   color: white;
+  text-transform: uppercase;
 }
 
 .project p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Monaco', Courier, monospace;
   color: white;
+  text-transform: uppercase;
 }
 
 .project a {
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Monaco', Courier, monospace;
+  text-transform: uppercase;
 }
 
 .project-image {
   width: 50%;
   height: auto;
+  border-radius: 20px;
+
 }
 
 .project-description {
   width: 45%;
 }
-
 
 [data-aos="custom-slide-in-left"] {
     transform: translateX(-50%);
@@ -118,12 +123,12 @@ input[type='number'] {
   
 @media (max-width: 768px) {
   .project-content {
-      flex-direction: column; /* Stack content vertically */
-      align-items: center;   /* Center align content */
+      flex-direction: column; 
+      align-items: center;   
   }
 
   .project-image, .project-description {
-      width: 90%; /* Adjust width for smaller screens */
-      margin-bottom: 20px; /* Add spacing between elements */
+      width: 90%; 
+      margin-bottom: 10px;
   }
 }

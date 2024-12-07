@@ -147,7 +147,7 @@ function Pong() {
     // Draw the right wall
     context.fillStyle = '#45a29e';
     context.fillRect(canvas.width - 10, 0, 10, canvas.height);
-  }, [gameState]);
+  });
 
   const resetGame = () => {
     setGameState({
@@ -173,7 +173,6 @@ function Pong() {
 
   return (
     <div className='game-container'>
-      <h2>Game</h2>
       <div className='canvas-container'>
         <canvas ref={canvasRef} width={600} height={300}></canvas>
         {!isGameRunning && (

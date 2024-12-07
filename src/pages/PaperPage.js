@@ -6,7 +6,6 @@ const PaperPage = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.heading}>About the Traveling Salesman Problem</h1>
-      {/* PDF Viewer */}
       <div style={styles.pdfContainer}>
       <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
         <Viewer fileUrl="/paper.pdf" />
@@ -36,8 +35,8 @@ const styles = {
     textAlign: "center",
   },
   pdfContainer: {
-    width: "80%",
-    height: "500px",
+    width: "100%",
+    height: "100vh",
     border: "1px solid #ccc",
   },
 };

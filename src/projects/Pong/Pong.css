@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
     padding: 20px;
     color: #c5c6c7;
-    font-family: Arial, sans-serif;
-    height: 100vh;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-transform: uppercase;
     max-width: 600px;
     border-radius: 10px;
     margin: auto;
+    height: 500px;
 
   }
   
@@ -80,7 +80,11 @@
   }
   
  
-@media (max-width: 667px) {
+@media (max-width: 650px) {
+
+  .game-container{
+    height: auto;
+  }
   .canvas-container {
     width: 90%;
     height: auto;
@@ -88,7 +92,7 @@
 
   canvas {
     width: 100%;
-    height: auto;
+    height: 500px;
   }
 
   .restart {
@@ -101,7 +105,8 @@
   }
 
   .rotate-message {
-    display: block; /* Show the message on small screens */
+    margin-top: 100px;
+    display: block; 
   }
 
   .game-container h2, .canvas-container, .restart, .score {

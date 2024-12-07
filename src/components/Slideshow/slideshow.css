@@ -1,28 +1,50 @@
 .swiper-slide-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  transition: height 0.3s ease, background-color 0.3s ease; 
+}
+
+.calculator-theme {
+  height: 720px; 
+  margin-bottom:10px;
+  border-radius: 20px;
+
+}
+
+.pong-theme {
+  height: 500px;
+  margin-bottom:10px;
+  border-radius: 20px;
+
+}
+
+.loan-theme {
+  height: auto; 
+  margin-bottom:10px;
+  border-radius: 20px;
+
+}
+
+
+@media (max-width: 650px) { 
+  .pong-theme {
+    height: 300px;
   }
-  
-  /* Position arrows at the top on mobile */
-  @media (max-width: 768px) { 
-    .swiper-button-prev, .swiper-button-next {
-      bottom: auto; 
-      top: 30px; 
-    }
-  }
-  
-  /* Optional: Customize the look of the arrows (if desired) */
+}
+
+@media (max-width: 768px) { 
   .swiper-button-prev, .swiper-button-next {
-    color: white; 
-    border-radius: 50%; 
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    bottom:auto; 
+    top:  20px; 
   }
-  
+
+  .calculator-theme {
+    height: 800px; 
+  }
+}

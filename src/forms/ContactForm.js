@@ -39,7 +39,6 @@ const ContactForm = () => {
 
         axios.post('https://portfolio-backend-b7enjhlbya-lz.a.run.app/api/contact/', submissionData)
             .then(response => {
-                console.log("Okay");
                 setSubmissionStatus('success');
             })
             .catch(error => {
