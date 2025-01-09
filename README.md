@@ -3,6 +3,9 @@ This is a frontend portfolio project built with React, showcasing projects and a
 
 ## Features
 Project Showcase: A page displaying individual projects.
+
+![Portfolio projekti](images/portfolioProjekti.png)
+
 Diploma Thesis Viewer: A page displaying a PDF of the diploma thesis in an embedded viewer.
 Responsive Design: Optimized for both large and small screens.
 Component-Based Architecture: Each section and project is encapsulated in its own React component.
@@ -29,6 +32,8 @@ These are straightforward components that provide basic navigation and page stru
 
 Slideshow Component: 
 This is a more complex component that leverages the Swiper library to create a "swipable container." The container houses interactive components, which represent projects from an earlier version of this portfolio. These project components are imported from the projects folder.
+
+![Slideshow](images/portfolioSlider.png)
 
 Pages:
 Each page in the application is represented by its own dedicated file, keeping the structure modular and organized.
