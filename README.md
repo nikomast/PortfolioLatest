@@ -25,8 +25,6 @@ This is a more complex component that leverages the Swiper library to create a "
 
 ![Slideshow](images/portfolioSlider.png)
 
-Pages:
-Each page in the application is represented by its own dedicated file, keeping the structure modular and organized.
 
 React: Core framework for building user interfaces.
 @react-pdf-viewer: For displaying the PDF of the diploma thesis.
