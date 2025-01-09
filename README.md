@@ -1,4 +1,6 @@
 # Portfolio
+https://portfolio-4444.web.app/
+
 This is a frontend portfolio project built with React, showcasing projects and a diploma thesis about the Traveling Salesman Problem. The project is component-based and uses modern web development practices.
 
 ## Features
@@ -9,18 +11,6 @@ Project Showcase: A page displaying individual projects.
 Diploma Thesis Viewer: A page displaying a PDF of the diploma thesis in an embedded viewer.
 Responsive Design: Optimized for both large and small screens.
 Component-Based Architecture: Each section and project is encapsulated in its own React component.
-
-### Installation and Setup
-
-Clone the repository:
-git clone https://github.com/your-repo-url.git
-Navigate to the project directory:
-cd Portfoliolatest
-Install dependencies:
-npm install
-Start the development server:
-npm start
-The app will be available at http://localhost:3000.
 
 #### Components
 
