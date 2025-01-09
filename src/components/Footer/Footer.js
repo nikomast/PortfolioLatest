@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             {/* Content of Footer */}
             <div>
-            © 2024 Niko Mast
+            © 2025 Niko Mast
             </div>
         </footer>
     );

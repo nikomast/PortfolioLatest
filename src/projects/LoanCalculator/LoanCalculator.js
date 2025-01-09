@@ -178,12 +178,6 @@ function LoanCalculator() {
             }}
             required
           />
-
-          <div className="remove-btn-container">
-            <button className="remove-btn" onClick={() => removeLoan(loan.id)}>
-              Remove
-            </button>
-          </div>
         </div>
       ))}
       {/*<button className="add-loan-btn" onClick={addLoan}>Add Loan</button>*/}
